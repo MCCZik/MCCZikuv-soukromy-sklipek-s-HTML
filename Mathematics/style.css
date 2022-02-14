@@ -1,0 +1,16 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 40px;
+    background-color: lavender;
+}
+
+.game {
+    text-align: center;
+    border: black 2px solid;
+    width:20%;
+    position: absolute;
+    left: 40%;
+    right: 40%;
+    background-color: gray;
+}

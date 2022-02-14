@@ -1,0 +1,25 @@
+var Rychlost1 = 0;
+var Stupně1 = 0;
+var Interval1 = setInterval(Točení, (1000/30))
+var Točíme1 = false;
+
+
+function Točit1() {
+    Rychlost = 18 + ( 6 * Math.random());
+    Točíme = true;
+}
+
+function Točení1() {
+    if (Točíme1 == true) {
+        Rychlost1 -= 0.1;
+        Stupně1 += Rychlost1;
+        if (Stupně1 > 360) {
+            Stupně1 -= 360;
+        }    
+        document.getElementById("kolo1").style.transform = "rotateZ(" + Stupně1 + "deg)";
+        if (Rychlost1 < 0) {
+            Rychlost1 = 0;
+            Točíme1 = false;
+        }
+    }
+}
