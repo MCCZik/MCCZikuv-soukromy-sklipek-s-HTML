@@ -1,0 +1,15 @@
+html {
+    background-color: rgb(146, 247, 247);
+}
+
+.chat {
+    width: 500px;
+    height: 200px;
+    border: 3px black solid;
+    padding: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+}
+
