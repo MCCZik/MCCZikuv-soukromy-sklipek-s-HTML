@@ -1,0 +1,30 @@
+.currentsymbol {
+    color: blue;
+    font-size: 40px;
+    background-color: #afafff;
+}
+.currentsymbolerror {
+    color: red;
+    font-size: 40px;
+    background-color: #a54343;
+}
+.pastsymbol {
+    font-size: 15px;
+    color: #00ff15;
+    background-color: #79ff84;
+}
+.pastsymbolerror {
+    font-size: 20px;
+    color: #f60000af;
+    background-color: #ff7474af;
+}
+
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(194, 194, 194);
+}
+
+h2 {
+    border: 3px gray solid;
+    background-color: rgb(211, 211, 211);
+}

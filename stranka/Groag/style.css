@@ -1,0 +1,30 @@
+html {
+    background-image: url(IMG/back.png);
+    padding: 0px;
+    margin: 0px;
+}
+.menu {
+    font-size: 60px;
+    background-image: url(IMG/menu.png);
+    height: 200px;
+    overflow-wrap: initial;
+    width: 100%;
+    text-align: center;
+    text-shadow: 0px 0px 100px rgb(0, 0, 0);
+}
+a {
+    color: rgb(255, 0, 0);
+}
+.zbytek {
+    height: 100% - 200px;
+    width: 100%;
+    color: black;
+    font-size: 50px;
+}
+
+
+
+
+
+
+

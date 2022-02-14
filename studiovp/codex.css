@@ -1,0 +1,44 @@
+html {
+    color : white;
+    font-family: 'Lucida Sans';
+    font-size: 1cm;
+}
+
+h1 {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-size: 2cm;
+}
+h2 {
+    background-color: gray;
+    font-family: 'Lucida Sans';
+    font-size: 1cm;
+}
+h3 {
+    background-color: yellow;
+    font-family: 'Lucida sans';
+    color: black;
+    font-size: 1cm;
+}
+h4 {
+    background-color: orange;
+    font-family: 'Lucida sans';
+    font-size: 1cm;
+}
+h5 {
+    background-color: blue;
+    font-family: 'Lucida sans';
+    font-size: 1cm;
+}
+h6 {
+    color: black;
+    font-family: 'Lucida sans';
+    cursor: pointer;
+    font-size: 0,05cm;
+}
+h7 {
+    background-color: green;
+    font-family: 'Lucida sans';
+    font-size: 1cm;
+}
