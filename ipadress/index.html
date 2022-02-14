@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <script src="js.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Data Status</title>
+        <script src= 
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> 
+            </script> 
+            
+            <script> 
+                /* Add "https://api.ipify.org?format=json" statement 
+                    this will communicate with the ipify servers in 
+                    order to retrieve the IP address $.getJSON will 
+                    load JSON-encoded data from the server using a 
+                    GET HTTP request */ 
+            
+                $.getJSON("https://api.ipify.org?format=json", 
+                                                    function(data) { 
+            
+                    // Setting text of element P with id gfg 
+                    $("#gfg").html(data.ip); 
+                }) 
+            </script> 
+        </head> 
+            
+        <body> 
+            <center> 
+                <h1>IPadress Locator</h1> 
+                <h3>Public IP Address of user is:</h3> 
+            
+                <p id="gfg"></p> 
+            
+            </center>                 
+    </body>
+</html>
