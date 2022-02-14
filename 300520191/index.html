@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="js.js"></script>
+        <meta charset="UTF-8">
+        <title>RPG</title>
+    </head>
+    <body onload="Init()">
+        <div class="window" id="window1">
+            <h1>StudioVP's tales and stories</h1>
+            <button onclick="NewGame()">Nová hra</button><br>
+            <button onclick="LoadGame()" id="button1">Načíst hru</button><br>
+            <button onclick="Instructions()">Instrukce</button>
+        </div>
+        <div class="window" id="window2">
+            Jméno: <input type="text" id="playername"><br>
+            Postava: <select id="playerrace">
+                <option value="human">Člověk</option>
+                <option value="elf">Elf</option>
+                <option value="obr">Obr</option>
+            </select><br>
+            <button onclick="StartGame()">Start</button>
+        </div>
+        <div class="window" id="window3">
+            <b>
+                <h2><b><u>Statistiky</u></b></h2>
+            </b>
+            <h2 id="stats_name"></h2>
+            <p id="stats_hp"></p>
+            <p id="stats_atk"></p>
+            <p id="stats_def"></p>
+            <p id="stats_gold"></p>
+            <hr>
+            <button onclick="Fight()">Fight</button>
+            <hr>
+            <button onclick="SaveGame()">Uložit hru</button>
+            <button onclick="DeleteGame()">Vymazat hru</button>
+            <button onclick="Home()">Zpět</button>
+        </div>
+        <div class="window" id="window4">
+            <h1>Instrukce:</h1>
+            <b><u>1. Výběr postavy</u></b><br>
+            Zadejte jméno hrdiny a následně vyberte jeho roli(Člověk, Elf, Obr). Poté stačí jenom kliknout na tlačítko "Start", a všechno může začít!<br><br>
+            <b><u>2. Ukládání a mazání hry</u></b><br>
+            Ve hře stačí pouze kliknout na tlačítko "Uložit hru" a hra se vám uloží. Pokud kliknete na tlačítko "Vymazat hru" tak vám to hru smaže <b>bez upozornění!!!</b><br><br>
+            <b><u>3. Bojování</u></b><br>
+            Když kliknete na tlačítko "Fight" tak vám náhodně hra vybere soupeře(Murlok, Troll, Drak) a poté s ním bojujete tak, že na něj klikáte a pokud na něj nekliknete do 2 sekund, tak zaútočí na vás!!!<br>
+            <button onclick="Home1()">Zpět</button>
+        </div>
+        <div class="window" id="window5">
+            <p id="mhp">Dragon : 150 hp</p>
+            <a>
+                <img src="IMG/human.png" alt="Obrázek se nenačetl :-(" width="367" height="280"><br>
+            </a>
+            <a onclick="MurlocHit()">
+                <img src="IMG/murloc.png" alt="Obrázek se nenačetl :-(" width="367" height="280"><br>
+            </a>
+        </div>
+        <div class="window" id="window6">
+            <p id="thp">Troll : 20 hp</p>
+            <a>
+                <img src="IMG/human.png" alt="Obrázek se nenačetl :-(" width="367" height="280">
+            </a>
+            <a onclick="TrollHit()">
+                <img src="IMG/troll.png" alt="Obrázek se nenačetl :-(" width="367" height="280">
+            </a>
+        </div>
+        <div class="window" id="window7">
+            <p id="dhp">Drak : 300 hp</p>
+            <a>
+                <img src="IMG/human.png" alt="Obrázek se nenačetl :-(" width="367" height="280">
+            </a>
+            <a onclick="DragonHit()">
+                <img src="IMG/dragon.png" alt="Obrázek se nenačetl :-(" width="367" height="280">
+            </a>
+        </div>
+        <div class="window" id="window8">
+            <p id="php">Pohlreich : 500 hp</p>
+            <a>
+                <img src="IMG/human.png" alt="Obrázek se nenačetl :-(" width="367" height="280"><br>
+            </a>
+        </div>
+    </body>
+</html>
