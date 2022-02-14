@@ -1,4 +1,4 @@
-# MCCZikuv-soukromy-sklipek-s-HTML
+# MCCZíkův soukromý sklípek s HTML
 ## Všechny HTML Projekty
 *Vítej v mém soukromém sklípku.*
 <br><br>
