@@ -1,9 +1,6 @@
 # MCCZikuv-soukromy-sklipek-s-HTML
 ## Všechny HTML Projekty
-<br>
----
-<br>
-# Vítej v mém soukromém sklípku.
+*Vítej v mém soukromém sklípku.*
 <br><br>
 ## Co zde nalezneš?
 > Například interaktivní programy typu `Žákovská knížka`, různé hry, školní projekty, aj.<br>
