@@ -82,7 +82,7 @@ function NextDay() {
                 vybranymuz = Math.floor(Math.random()*muzu+1);
                 vybranazena = Math.floor(Math.random()*muzu+1);
                 if (vybranazena == vybranymuz) {
-                    vybranazena += 1;
+                    vybranazena -= 1;
                 }
                 akce = Math.floor(Math.random()*(akci.length));
                 mreakce = Math.floor(Math.random()*(mreakci.length));
