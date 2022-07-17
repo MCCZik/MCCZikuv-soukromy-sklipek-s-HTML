@@ -28,7 +28,8 @@ var zre;
 var prikaz;
 var increment = 1;
 var muzuzen = 0;
-
+var homo = 10;
+var zena = 10;
 
 // Stats lidí
 var mi = [50,50,50,50,50];
@@ -76,21 +77,41 @@ function NextDay() {
     for (let i = 0; i < increment; i++) {
         document.getElementById('events').innerHTML += "<h2>" + Days + ". den</h2>"
         for (let i = 0; i < muzuzen; i++) {
-            vybranymuz = Math.floor(Math.random()*muzu+1);
-            vybranazena = Math.floor(Math.random()*zen+1);
-            akce = Math.floor(Math.random()*(akci.length));
-            mreakce = Math.floor(Math.random()*(mreakci.length));
-            zreakce = Math.floor(Math.random()*(zreakci.length));
-            m = document.getElementById(vybranymuz + "m").value;
-            z = document.getElementById(vybranazena + "z").value;
-            a = akci[akce];
-            mre = mreakci[mreakce];
-            zre = zreakci[zreakce];
-            document.getElementById('events').innerHTML += m + a + z + "<br>";
-            document.getElementById('events').innerHTML += m + mre + "<br>";
-            document.getElementById('events').innerHTML += z + zre + "<br>";      
+            homo = Math.floor(Math.random()*100+1);
+            if (homo > 20 && muzu >= 2) {
+                vybranymuz = Math.floor(Math.random()*muzu+1);
+                vybranazena = Math.floor(Math.random()*muzu+1);
+                if (vybranazena == vybranymuz) {
+                    vybranazena -= 1;
+                }
+                akce = Math.floor(Math.random()*(akci.length));
+                mreakce = Math.floor(Math.random()*(mreakci.length));
+                zreakce = Math.floor(Math.random()*(mreakci.length));
+                m = document.getElementById(vybranymuz + "m").value;
+                z = document.getElementById(vybranazena + "m").value;
+                a = akci[akce];
+                mre = mreakci[mreakce];
+                zre = mreakci[zreakce];
+                document.getElementById('events').innerHTML += m + a + z + "<br>";
+                document.getElementById('events').innerHTML += m + mre + "<br>";
+                document.getElementById('events').innerHTML += z + zre + "<br>"; 
+            } else {
+                vybranymuz = Math.floor(Math.random()*muzu+1);
+                vybranazena = Math.floor(Math.random()*zen+1);
+                akce = Math.floor(Math.random()*(akci.length));
+                mreakce = Math.floor(Math.random()*(mreakci.length));
+                zreakce = Math.floor(Math.random()*(zreakci.length));
+                m = document.getElementById(vybranymuz + "m").value;
+                z = document.getElementById(vybranazena + "z").value;
+                a = akci[akce];
+                mre = mreakci[mreakce];
+                zre = zreakci[zreakce];
+                document.getElementById('events').innerHTML += m + a + z + "<br>";
+                document.getElementById('events').innerHTML += m + mre + "<br>";
+                document.getElementById('events').innerHTML += z + zre + "<br>";      
+            }
+            Days = Days +1;       
         }
-        Days = Days +1;       
     }
 }
 
@@ -105,6 +126,12 @@ function Clear() {
 function KD(e) {
     if (e.key == "Enter") {
         Prikaz()
+    }
+}
+
+function KDM(e) {
+    if (e.key == "Enter") {
+        NextDay();
     }
 }
 

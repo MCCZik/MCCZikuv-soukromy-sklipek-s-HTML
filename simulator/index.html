@@ -6,9 +6,9 @@
         <title>Simulátor Přátelství v1.0</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body onload="Init()" onkeydown="KD(event)">
+    <body onload="Init()">
         <h1><center>Simulátor přátelství</center></h1><hr>
-        <div class="window" id="window0">
+        <div class="window" id="window0" onkeydown="KDM(event)">
             <center><button class="main" id="start" onclick="SwitchScreen('window1')">Spustit</button>
             <button class="main" id="mainhelp" onclick="SwitchScreen('window8')">Nápověda</button>
             <button class="main" id="thanks" onclick="SwitchScreen('window9')">Poděkování</button>
@@ -26,7 +26,7 @@
         </div>
         <div class="window" id="window3">
             <span id="events"></span>
-            <input type="text" id="cmds" placeholder="napoveda - help"><button onclick="Prikaz()" id="prikaz">Zadat</button><button id="nextday" onclick="NextDay()">Dalsi den!</button><button id="vymazat" onclick="Vymazat()">Vymazat eventy</button>
+            <input type="text" id="cmds" placeholder="napoveda - help" onkeydown="KD(event)"><button onclick="Prikaz()" id="prikaz">Zadat</button><button id="nextday" onclick="NextDay()">Dalsi den!</button><button id="vymazat" onclick="Vymazat()">Vymazat eventy</button>
         </div>
         <div class="window" id="window4">
             <h2>Nápověda k příkazům</h2>
