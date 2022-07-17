@@ -77,7 +77,7 @@ function NextDay() {
     for (let i = 0; i < increment; i++) {
         document.getElementById('events').innerHTML += "<h2>" + Days + ". den</h2>"
         for (let i = 0; i < muzuzen; i++) {
-            homo = Math.floor(Math.random()*100+1);
+            /*homo = Math.floor(Math.random()*100+1);
             if (homo > 20 && muzu >= 2) {
                 vybranymuz = Math.floor(Math.random()*muzu+1);
                 vybranazena = Math.floor(Math.random()*muzu+1);
@@ -92,7 +92,7 @@ function NextDay() {
                 document.getElementById('events').innerHTML += m + a + z + "<br>";
                 document.getElementById('events').innerHTML += m + mre + "<br>";
                 document.getElementById('events').innerHTML += z + zre + "<br>"; 
-            } else {
+            } else {*/
                 vybranymuz = Math.floor(Math.random()*muzu+1);
                 vybranazena = Math.floor(Math.random()*zen+1);
                 akce = Math.floor(Math.random()*(akci.length));
@@ -106,7 +106,7 @@ function NextDay() {
                 document.getElementById('events').innerHTML += m + a + z + "<br>";
                 document.getElementById('events').innerHTML += m + mre + "<br>";
                 document.getElementById('events').innerHTML += z + zre + "<br>";      
-            }
+            //}
             Days = Days +1;       
         }
     }
