@@ -6,9 +6,9 @@
         <title>Simulátor Přátelství v1.0</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body onload="Init()">
+    <body onload="Init()" onkeydown="KDM(event)">
         <h1><center>Simulátor přátelství</center></h1><hr>
-        <div class="window" id="window0" onkeydown="KDM(event)">
+        <div class="window" id="window0">
             <center><button class="main" id="start" onclick="SwitchScreen('window1')">Spustit</button>
             <button class="main" id="mainhelp" onclick="SwitchScreen('window8')">Nápověda</button>
             <button class="main" id="thanks" onclick="SwitchScreen('window9')">Poděkování</button>
