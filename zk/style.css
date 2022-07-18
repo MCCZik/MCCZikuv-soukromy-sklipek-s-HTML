@@ -1,0 +1,77 @@
+html {
+  background-color: #dddddd;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+hr {
+  border: none;
+  border-bottom: black 2px dashed;
+}
+
+.predmet {
+  margin: 6px;
+  padding: 6px;
+  border-radius: 8px;
+  background-color: #ffffee;
+}
+
+button {
+  background-color: #008899;
+  box-shadow: black 2px 2px 4px;
+  color: white;
+  border: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 2px;
+  padding: 2px 4px;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #44bbcc;
+  box-shadow: black 2px 2px 4px;
+  border: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 2px;
+  padding: 2px 4px;
+  font-size: 1em;
+}
+
+button:active {
+  background-color: #004455;
+  box-shadow: none;
+
+}
+
+h2 {
+  text-align: center;
+  margin: 2px;
+  font-size: 2em;
+}
+
+.znamecka {
+  border: #0005 1px dotted;
+  background-color: #f001;
+  margin-right: 8px;
+  padding: 0px 2px;
+}
+
+.znamecka:hover {
+  background-color: #f003;
+}
+
+.znamecka:active {
+  background-color: #0003;
+}
+
+input, select {
+  background-color: #000a;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: none;
+  border-bottom: black 2px solid;
+}
+
+p {
+  margin-top: 1px;
+  margin-bottom: 1px;
+}

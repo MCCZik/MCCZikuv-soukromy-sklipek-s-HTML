@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Žákovská knížka</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180542708-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-180542708-1');
+</script>
+</head>
+<body onload="Init()">
+  <div class="screen" id="main">
+    <div id="container">
+
+    </div>
+    <hr>
+    <button onclick="SwitchScreen('newlesson');Clear('nl')">Přidat předmět</button><br>
+    <button onclick="SwitchScreen('help')">Nápověda</button>
+  </div>
+  <div class="screen" id="newlesson">
+    Název předmětu : <input type="text" id="nl_i1">
+    <hr>
+    <button onclick="AddLesson()">Přidat</button><br>
+    <button onclick="SwitchScreen('main')">Zrušit</button>
+  </div>
+  <div class="screen" id="newmark">
+    Název známky : <input type="text" id="nm_i1"><br>
+    Hodnota : <select id="nm_i2">
+      <option value="0"selected></option>
+      <option value="1b">1</option>
+      <option value="1c">1·</option>
+      <option value="1d">1-</option>
+      <option value="2a">2+</option>
+      <option value="2b">2</option>
+      <option value="2c">2·</option>
+      <option value="2d">2-</option>
+      <option value="3a">3+</option>
+      <option value="3b">3</option>
+      <option value="3c">3·</option>
+      <option value="3d">3-</option>
+      <option value="4a">4+</option>
+      <option value="4b">4</option>
+      <option value="4c">4·</option>
+      <option value="4d">4-</option>
+      <option value="5a">5+</option>
+      <option value="5b">5</option>
+    </select><br>
+    Váha : <select id="nm_i3">
+      <option value="0" selected></option>
+      <option value="1">Velmi velká (100%)</option>
+      <option value="0.75">Velká (75%)</option>
+      <option value="0.5">Normální (50%)</option>
+      <option value="0.35">Malá (35%)</option>
+      <option value="0.2">Velmi malá (20%)</option>
+      <option value="0.1">Mini (10%)</option>
+    </select>
+    <hr>
+    <button onclick="AddMark()">OK</button><br>
+    <button onclick="SwitchScreen('main')">Zrušit</button>
+  </div>
+  <div class="screen" id="inspect">
+    <p><b>Předmět : </b><span id="i_1"></span></p>
+    <p><b>Název známky : </b><span id="i_2"></span></p>
+    <p><b>Známka : </b><span id="i_3"></span></p>
+    <p><b>Hodnota do průměru : </b><span id="i_4"></span></p>
+    <p><b>Váha známky : </b><span id="i_5"></span></p>
+    <hr>
+    <button onclick="SwitchScreen('dm')">Odstranit známku</button>
+    <button onclick="SwitchScreen('main')">Zpět</button>
+  </div>
+  <div class="screen" id="help">
+    <p>Tohleto je mini webová aplikace na žákovskou knížku.</p>
+    <p>Známky jsou uložené na tvojem zařízení <i>(jinak řečeno, kromě tebe je nikdo nevidí)</i>.</p>
+    <p>Tlačítkem <b>Přidat předmět</b> přidáte předmět.</p>
+    <p>Tlačítkem <b>Nová známka</b> přejdete do dialogu nové známky, kde pak můžeš vybrat známku, název a její váhu.</p>
+    <p>Tlačítkem <b>Odstranit předmět</b> odstraníte známky a všechny známky v něm <i>(vyžaduje potvrzení)</i>.</p>
+    <p>Kliknutím na známku zobrazíte její podrobnosti, kde se nachází i tlačítko <b>Odstranit Známku</b> pro odstranění vybrané známky.</p>
+    <p>Průběžně se vypočítává průměr známek, v závorce je bez různých váh známek</p>
+    <p>Aplikace ukládá informace po každé akci</p>
+    <hr>
+    <button onclick="SwitchScreen('main')">Zpět</button>
+  </div>
+  <div class="screen" id="dl">
+    <h1>Opravdu?</h1>
+    <hr>
+    <button onclick="DeleteLesson()">Ano</button>
+    <button onclick="SwitchScreen('main')">Ne</button>
+  </div>
+  <div class="screen" id="dm">
+    <h1>Opravdu?</h1>
+    <hr>
+    <button onclick="DeleteMark()">Ano</button>
+    <button onclick="SwitchScreen('inspect')">Ne</button>
+  </div>
+</body>
+</html>
