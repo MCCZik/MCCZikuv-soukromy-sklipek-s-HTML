@@ -1,18 +1,20 @@
 html {
-  background-color: #dddddd;
+  background-color: #006c7a;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
 }
 
 hr {
   border: none;
-  border-bottom: black 2px dashed;
+  border-bottom: rgba(255, 255, 255, 0.659) 2px dashed;
 }
 
 .predmet {
   margin: 6px;
   padding: 6px;
   border-radius: 8px;
-  background-color: #ffffee;
+  background-color: #008799cf;
+  box-shadow: black 2px 2px 4px;
 }
 
 button {
@@ -64,7 +66,7 @@ h2 {
 }
 
 input, select {
-  background-color: #000a;
+  background-color: #004455;
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: none;
