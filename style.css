@@ -1,0 +1,77 @@
+.app {
+    margin: 6px;
+    padding: 6px;
+    border-radius: 8px;
+    background-color: #004299cf;
+    box-shadow: black 2px 2px 4px;
+}
+
+.old {
+    margin: 6px;
+    padding: 6px;
+    border-radius: 8px;
+    background-color: #00357bcf;
+    box-shadow: black 2px 2px 4px;
+}
+
+button {
+    background-color: #004299;
+    box-shadow: black 2px 2px 4px;
+    color: white;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 2px;
+    padding: 2px 4px;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #4448cc;
+    box-shadow: black 2px 2px 4px;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 2px;
+    padding: 2px 4px;
+    font-size: 1em;
+}
+
+button:active {
+    background-color: #002f55;
+    box-shadow: none;
+
+}
+
+h2 {
+    text-align: left;
+    margin: 2px;
+    font-size: 2em;
+}
+
+h2#cent {
+    text-align: center;
+    margin: 2px;
+    font-size: 2em;
+}
+
+h3 {
+    text-align: center;
+    margin: 2px;
+    font-size: 1.2em;
+}
+
+h1 {
+    text-align: center;
+    margin: 2px;
+    font-size: 4em;
+}
+
+html {
+    background-color: #00237a;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+hr {
+    border: none;
+    border-bottom: rgba(255, 255, 255, 0.659) 2px dashed;
+}
