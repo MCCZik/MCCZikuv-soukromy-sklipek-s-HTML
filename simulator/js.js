@@ -103,170 +103,170 @@ function NextDay() {
 function Interaction() {
     //zamilování
     if (akce == 0) {
-        ms[vybranymuz] += 1;
-        zs[vybranazena] += 1;
-        ml[vybranymuz] += 1;
-        zl[vybranazena] += 1;
-        document.getElementById('events').innerHTML += "<i>" + m + " se zvysilo sebevedomi na " + ms[vybranymuz] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + z + " se zvysilo sebevedomi na " + zs[vybranazena] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + m + " se zvysila laska na " + ml[vybranymuz] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + z + " se zvysila laska na " + zl[vybranazena] + "</i><br>";
+        ms[vybranymuz-1] += 1;
+        zs[vybranazena-1] += 1;
+        ml[vybranymuz-1] += 1;
+        zl[vybranazena-1] += 1;
+        document.getElementById('events').innerHTML += "<i>" + m + " se zvysilo sebevedomi na " + ms[vybranymuz-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + z + " se zvysilo sebevedomi na " + zs[vybranazena-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + m + " se zvysila laska na " + ml[vybranymuz-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + z + " se zvysila laska na " + zl[vybranazena-1] + "</i><br>";
     }
     //výborná noc
     if (akce == 1) {
-        ms[vybranymuz] += 1;
-        zv[vybranazena] -= 1;
-        ml[vybranymuz] += 2;
-        zl[vybranazena] += 2;
-        document.getElementById('events').innerHTML += "<i>" + m + " se zvysilo sebevedomi na " + ms[vybranymuz] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + z + " se snizil vzhled na " + zv[vybranazena] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + m + " se zvysila laska na " + ml[vybranymuz] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + z + " se zvysila laska na " + zl[vybranazena] + "</i><br>";
+        ms[vybranymuz-1] += 1;
+        zv[vybranazena-1] -= 1;
+        ml[vybranymuz-1] += 2;
+        zl[vybranazena-1] += 2;
+        document.getElementById('events').innerHTML += "<i>" + m + " se zvysilo sebevedomi na " + ms[vybranymuz-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + z + " se snizil vzhled na " + zv[vybranazena-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + m + " se zvysila laska na " + ml[vybranymuz-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + z + " se zvysila laska na " + zl[vybranazena-1] + "</i><br>";
     }
     //rozchod
     if (akce == 2) {
-        ms[vybranymuz] -= 2;
-        zs[vybranazena] -= 2;
-        ml[vybranymuz] -= 10;
-        zl[vybranazena] -= 10;
-        document.getElementById('events').innerHTML += "<i>" + m + " se snizilo sebevedomi na " + ms[vybranymuz] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + z + " se snizilo sebevedomi na " + zs[vybranazena] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + m + " se snizila laska na " + ml[vybranymuz] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + z + " se snizila laska na " + zl[vybranazena] + "</i><br>";
+        ms[vybranymuz-1] -= 2;
+        zs[vybranazena-1] -= 2;
+        ml[vybranymuz-1] -= 10;
+        zl[vybranazena-1] -= 10;
+        document.getElementById('events').innerHTML += "<i>" + m + " se snizilo sebevedomi na " + ms[vybranymuz-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + z + " se snizilo sebevedomi na " + zs[vybranazena-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + m + " se snizila laska na " + ml[vybranymuz-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + z + " se snizila laska na " + zl[vybranazena-1] + "</i><br>";
     }
     //rande
     if (akce == 3) {
-        mv[vybranymuz] += 1;
-        zv[vybranazena] += 1;
-        ms[vybranymuz] -= 2;
-        zs[vybranazena] -= 2;
-        ml[vybranymuz] += 5;
-        zl[vybranazena] += 5;
-        document.getElementById('events').innerHTML += "<i>" + z + " se zvysil vzhled na " + mv[vybranymuz] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + z + " se zvysil vzhled na " + zv[vybranazena] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + m + " se zvysilo sebevedomi na " + ms[vybranymuz] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + z + " se zvysilo sebevedomi na " + zs[vybranazena] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + m + " se zvysila laska na " + ml[vybranymuz] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + z + " se zvysila laska na " + zl[vybranazena] + "</i><br>";
+        mv[vybranymuz-1] += 1;
+        zv[vybranazena-1] += 1;
+        ms[vybranymuz-1] -= 2;
+        zs[vybranazena-1] -= 2;
+        ml[vybranymuz-1] += 5;
+        zl[vybranazena-1] += 5;
+        document.getElementById('events').innerHTML += "<i>" + z + " se zvysil vzhled na " + mv[vybranymuz-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + z + " se zvysil vzhled na " + zv[vybranazena-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + m + " se zvysilo sebevedomi na " + ms[vybranymuz-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + z + " se zvysilo sebevedomi na " + zs[vybranazena-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + m + " se zvysila laska na " + ml[vybranymuz-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + z + " se zvysila laska na " + zl[vybranazena-1] + "</i><br>";
     }
     //prespani
     if (akce == 4) {
-        ms[vybranymuz] += 1;
-        ml[vybranymuz] += 2;
-        zl[vybranazena] += 2;
-        document.getElementById('events').innerHTML += "<i>" + m + " se zvysilo sebevedomi na " + ms[vybranymuz] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + m + " se zvysila laska na " + ml[vybranymuz] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + z + " se zvysila laska na " + zl[vybranazena] + "</i><br>";
+        ms[vybranymuz-1] += 1;
+        ml[vybranymuz-1] += 2;
+        zl[vybranazena-1] += 2;
+        document.getElementById('events').innerHTML += "<i>" + m + " se zvysilo sebevedomi na " + ms[vybranymuz-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + m + " se zvysila laska na " + ml[vybranymuz-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + z + " se zvysila laska na " + zl[vybranazena-1] + "</i><br>";
     }
     //utopení
     if (akce == 5) {
-        mv[vybranymuz] -= 2;
-        zv[vybranazena] -= 5;
-        ml[vybranymuz] -= 10;
-        zl[vybranazena] -= 3;
-        document.getElementById('events').innerHTML += "<i>" + m + " se snizil vzhled na " + mv[vybranymuz] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + z + " se snizil vzhled na " + zv[vybranazena] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + m + " se snizila laska na " + ml[vybranymuz] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + z + " se snizila laska na " + zl[vybranazena] + "</i><br>";
+        mv[vybranymuz-1] -= 2;
+        zv[vybranazena-1] -= 5;
+        ml[vybranymuz-1] -= 10;
+        zl[vybranazena-1] -= 3;
+        document.getElementById('events').innerHTML += "<i>" + m + " se snizil vzhled na " + mv[vybranymuz-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + z + " se snizil vzhled na " + zv[vybranazena-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + m + " se snizila laska na " + ml[vybranymuz-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + z + " se snizila laska na " + zl[vybranazena-1] + "</i><br>";
     }
     //narozeniny
     if (akce == 6) {
-        ms[vybranymuz] += 1;
-        zs[vybranazena] += 1;
-        ml[vybranymuz] += 1;
-        zl[vybranazena] += 1;
-        document.getElementById('events').innerHTML += "<i>" + m + " se zvysilo sebevedomi na " + ms[vybranymuz] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + z + " se zvysilo sebevedomi na " + zs[vybranazena] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + m + " se zvysila laska na " + ml[vybranymuz] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + z + " se zvysila laska na " + zl[vybranazena] + "</i><br>";
+        ms[vybranymuz-1] += 1;
+        zs[vybranazena-1] += 1;
+        ml[vybranymuz-1] += 1;
+        zl[vybranazena-1] += 1;
+        document.getElementById('events').innerHTML += "<i>" + m + " se zvysilo sebevedomi na " + ms[vybranymuz-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + z + " se zvysilo sebevedomi na " + zs[vybranazena-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + m + " se zvysila laska na " + ml[vybranymuz-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + z + " se zvysila laska na " + zl[vybranazena-1] + "</i><br>";
     }
     //podvedení
     if (akce == 7) {
-        ms[vybranymuz] -= 2;
-        zs[vybranazena] -= 2;
-        ml[vybranymuz] -= 10;
-        zl[vybranazena] -= 10;
-        document.getElementById('events').innerHTML += "<i>" + m + " se snizilo sebevedomi na " + ms[vybranymuz] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + z + " se snizilo sebevedomi na " + zs[vybranazena] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + m + " se snizila laska na " + ml[vybranymuz] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + z + " se snizila laska na " + zl[vybranazena] + "</i><br>";
+        ms[vybranymuz-1] -= 2;
+        zs[vybranazena-1] -= 2;
+        ml[vybranymuz-1] -= 10;
+        zl[vybranazena-1] -= 10;
+        document.getElementById('events').innerHTML += "<i>" + m + " se snizilo sebevedomi na " + ms[vybranymuz-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + z + " se snizilo sebevedomi na " + zs[vybranazena-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + m + " se snizila laska na " + ml[vybranymuz-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + z + " se snizila laska na " + zl[vybranazena-1] + "</i><br>";
     }
     //videohra
     if (akce == 8) {
-        ms[vybranymuz] += 1;
-        zs[vybranazena] += 1;
-        ml[vybranymuz] += 1;
-        zl[vybranazena] += 1;
-        document.getElementById('events').innerHTML += "<i>" + m + " se zvysilo sebevedomi na " + ms[vybranymuz] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + z + " se zvysilo sebevedomi na " + zs[vybranazena] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + m + " se zvysila laska na " + ml[vybranymuz] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + z + " se zvysila laska na " + zl[vybranazena] + "</i><br>";
+        ms[vybranymuz-1] += 1;
+        zs[vybranazena-1] += 1;
+        ml[vybranymuz-1] += 1;
+        zl[vybranazena-1] += 1;
+        document.getElementById('events').innerHTML += "<i>" + m + " se zvysilo sebevedomi na " + ms[vybranymuz-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + z + " se zvysilo sebevedomi na " + zs[vybranazena-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + m + " se zvysila laska na " + ml[vybranymuz-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + z + " se zvysila laska na " + zl[vybranazena-1] + "</i><br>";
     }
     //sigma
     if (akce == 9) {
-        ms[vybranymuz] += 1;
-        ml[vybranymuz] += 1;
-        zl[vybranazena] += 1;
-        document.getElementById('events').innerHTML += "<i>" + m + " se zvysilo sebevedomi na " + ms[vybranymuz] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + m + " se zvysila laska na " + ml[vybranymuz] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + z + " se zvysila laska na " + zl[vybranazena] + "</i><br>";
+        ms[vybranymuz-1] += 1;
+        ml[vybranymuz-1] += 1;
+        zl[vybranazena-1] += 1;
+        document.getElementById('events').innerHTML += "<i>" + m + " se zvysilo sebevedomi na " + ms[vybranymuz-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + m + " se zvysila laska na " + ml[vybranymuz-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + z + " se zvysila laska na " + zl[vybranazena-1] + "</i><br>";
     }
     //park
     if (akce == 10) {
-        ms[vybranymuz] += 1;
-        zs[vybranazena] += 1;
-        document.getElementById('events').innerHTML += "<i>" + m + " se zvysilo sebevedomi na " + ms[vybranymuz] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + z + " se zvysilo sebevedomi na " + zs[vybranazena] + "</i><br>";
+        ms[vybranymuz-1] += 1;
+        zs[vybranazena-1] += 1;
+        document.getElementById('events').innerHTML += "<i>" + m + " se zvysilo sebevedomi na " + ms[vybranymuz-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + z + " se zvysilo sebevedomi na " + zs[vybranazena-1] + "</i><br>";
     }
     //kafe
     if (akce == 11) {
-        ms[vybranymuz] += 1;
-        zs[vybranazena] += 1;
-        document.getElementById('events').innerHTML += "<i>" + m + " se zvysilo sebevedomi na " + ms[vybranymuz] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + z + " se zvysilo sebevedomi na " + zs[vybranazena] + "</i><br>";
+        ms[vybranymuz-1] += 1;
+        zs[vybranazena-1] += 1;
+        document.getElementById('events').innerHTML += "<i>" + m + " se zvysilo sebevedomi na " + ms[vybranymuz-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + z + " se zvysilo sebevedomi na " + zs[vybranazena-1] + "</i><br>";
     }
     //vyhozeni z domu
     if (akce == 12) {
-        ms[vybranymuz] += 5;
-        zs[vybranazena] -= 2;
-        ml[vybranymuz] -= 5;
-        zl[vybranazena] -= 1;
-        document.getElementById('events').innerHTML += "<i>" + m + " se zvysilo sebevedomi na " + ms[vybranymuz] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + z + " se snizilo sebevedomi na " + zs[vybranazena] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + m + " se snizila laska na " + ml[vybranymuz] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + z + " se snizila laska na " + zl[vybranazena] + "</i><br>";
+        ms[vybranymuz-1] += 5;
+        zs[vybranazena-1] -= 2;
+        ml[vybranymuz-1] -= 5;
+        zl[vybranazena-1] -= 1;
+        document.getElementById('events').innerHTML += "<i>" + m + " se zvysilo sebevedomi na " + ms[vybranymuz-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + z + " se snizilo sebevedomi na " + zs[vybranazena-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + m + " se snizila laska na " + ml[vybranymuz-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + z + " se snizila laska na " + zl[vybranazena-1] + "</i><br>";
     }
     //urazit
     if (akce == 13) {
-        ms[vybranymuz] += 5;
-        zs[vybranazena] -= 2;
-        zl[vybranazena] -= 1;
-        document.getElementById('events').innerHTML += "<i>" + m + " se zvysilo sebevedomi na " + ms[vybranymuz] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + z + " se snizilo sebevedomi na " + zs[vybranazena] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + z + " se snizila laska na " + zl[vybranazena] + "</i><br>";
+        ms[vybranymuz-1] += 5;
+        zs[vybranazena-1] -= 2;
+        zl[vybranazena-1] -= 1;
+        document.getElementById('events').innerHTML += "<i>" + m + " se zvysilo sebevedomi na " + ms[vybranymuz-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + z + " se snizilo sebevedomi na " + zs[vybranazena-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + z + " se snizila laska na " + zl[vybranazena-1] + "</i><br>";
     }
     //ponizit
     if (akce == 14) {
-        ms[vybranymuz] += 5;
-        zs[vybranazena] -= 2;
-        zl[vybranazena] -= 1;
-        document.getElementById('events').innerHTML += "<i>" + m + " se zvysilo sebevedomi na " + ms[vybranymuz] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + z + " se snizilo sebevedomi na " + zs[vybranazena] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + z + " se snizila laska na " + zl[vybranazena] + "</i><br>";
+        ms[vybranymuz-1] += 5;
+        zs[vybranazena-1] -= 2;
+        zl[vybranazena-1] -= 1;
+        document.getElementById('events').innerHTML += "<i>" + m + " se zvysilo sebevedomi na " + ms[vybranymuz-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + z + " se snizilo sebevedomi na " + zs[vybranazena-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + z + " se snizila laska na " + zl[vybranazena-1] + "</i><br>";
     }
     //potesit
     if (akce == 15) {
-        ms[vybranymuz] += 1;
-        zl[vybranazena] += 1;
-        document.getElementById('events').innerHTML += "<i>" + m + " se zvysilo sebevedomi na " + ms[vybranymuz] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + z + " se zvysila laska na " + zl[vybranazena] + "</i><br>";
+        ms[vybranymuz-1] += 1;
+        zl[vybranazena-1] += 1;
+        document.getElementById('events').innerHTML += "<i>" + m + " se zvysilo sebevedomi na " + ms[vybranymuz-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + z + " se zvysila laska na " + zl[vybranazena-1] + "</i><br>";
     }
     //ucit
     if (akce == 16) {
-        ms[vybranymuz] += 1;
-        zs[vybranazena] += 1;
-        document.getElementById('events').innerHTML += "<i>" + m + " se zvysilo sebevedomi na " + ms[vybranymuz] + "</i><br>";
-        document.getElementById('events').innerHTML += "<i>" + z + " se zvysilo sebevedomi na " + zs[vybranazena] + "</i><br>";
+        ms[vybranymuz-1] += 1;
+        zs[vybranazena-1] += 1;
+        document.getElementById('events').innerHTML += "<i>" + m + " se zvysilo sebevedomi na " + ms[vybranymuz-1] + "</i><br>";
+        document.getElementById('events').innerHTML += "<i>" + z + " se zvysilo sebevedomi na " + zs[vybranazena-1] + "</i><br>";
     }
     document.getElementById('events').innerHTML += "<br>";
 }
