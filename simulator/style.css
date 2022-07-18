@@ -2,3 +2,20 @@ button.main {
     text-align: center;
     
 }
+
+#bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+}
+
+button#bottom {
+    width: 100px;
+    height: 60px;
+}
+input#bottom {
+    border: 0px solid black;
+    background-color: black;
+    border-bottom: 2px solid purple;
+}

@@ -44,6 +44,9 @@ function StartSim() {
     muzu = parseInt(document.getElementById('man').value);
     zen = parseInt(document.getElementById('woman').value);
     muzuzen = muzu+zen;
+    if (muzu == null || muzu == undefined || muzu == NaN || zen == null || zen == undefined || zen == NaN ) {
+        window.alert('Nezadal jste vsechny nutne udaje.')
+    }
     if (muzu > 5 || zen > 5) {
         window.alert('Maximalne muze byt pouze 10 lidi dohromady. Pokud mate potize, nactete stranku znovu!');
     } else {
@@ -122,6 +125,14 @@ function Prikaz() {
         document.getElementById('cmds').value = "";
         SwitchScreen('window4')
     }
+}
+
+function Homo() {
+    window.alert('Homo mod v tuto chvíli není hotov.')
+}
+
+function Vymazat() {
+    document.getElementById('events').innerHTML = "";
 }
 
 function End() {

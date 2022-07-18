@@ -16,9 +16,10 @@
         </div>
         <div class="window"id="window1">
             Kolik mužů chcete? (1-5)
-            <input type="number" id="man" min="1" max="5"><br>
+            <input type="number" id="man" min="1" max="5" required><br>
             Kolik žen chcete? (1-5)
-            <input type="number" id="woman" min="1" max="5"><br><hr>
+            <input type="number" id="woman" min="1" max="5" required><br>
+            Homo mod? <input type="checkbox" id="homomode" onclick="Homo()"><hr>
             <button onclick="StartSim()">Simuluj!</button>
         </div>
         <div class="window" id="window2">
@@ -26,7 +27,9 @@
         </div>
         <div class="window" id="window3">
             <span id="events"></span>
-            <input type="text" id="cmds" placeholder="napoveda - help" onkeydown="KD(event)"><button onclick="Prikaz()" id="prikaz">Zadat</button><button id="nextday" onclick="NextDay()">Dalsi den!</button><button id="vymazat" onclick="Vymazat()">Vymazat eventy</button>
+            <div id="bottom">
+                <button id="nextday" onclick="NextDay()">Dalsi den!</button><button id="vymazat" onclick="Vymazat()">Vymazat eventy</button><input type="text" id="cmds" placeholder="napoveda - help" onkeydown="KD(event)">
+            </div>
         </div>
         <div class="window" id="window4">
             <h2>Nápověda k příkazům</h2>
