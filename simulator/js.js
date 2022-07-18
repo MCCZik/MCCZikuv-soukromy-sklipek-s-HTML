@@ -138,8 +138,8 @@ function Interaction() {
     if (akce == 3) {
         mv[vybranymuz-1] += 1;
         zv[vybranazena-1] += 1;
-        ms[vybranymuz-1] -= 2;
-        zs[vybranazena-1] -= 2;
+        ms[vybranymuz-1] += 2;
+        zs[vybranazena-1] += 2;
         ml[vybranymuz-1] += 5;
         zl[vybranazena-1] += 5;
         document.getElementById('events').innerHTML += "<i>" + z + " se zvysil vzhled na " + mv[vybranymuz-1] + "</i><br>";
