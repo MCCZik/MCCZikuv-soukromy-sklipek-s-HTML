@@ -5,6 +5,10 @@
     background-color: #004299cf;
     box-shadow: black 2px 2px 4px;
     max-width: 50%;
+    box-sizing: border-box;
+    float: left;
+    width: 50%; /* three boxes (use 25% for four, and 50% for two, etc) */
+    padding: 50px; /* if you want space between the images */
 }
 
 .old {
