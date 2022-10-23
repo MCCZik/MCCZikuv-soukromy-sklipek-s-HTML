@@ -7,7 +7,11 @@ var Zn = 0;
 var cislobez = 0;
 var spravne = 0;
 var spatne = 0;
+var total = 0;
 function Init() {
+    if ((spravne-spatne) == 10) {
+        window.alert('Konec hry! Deset správných příkladů jsi vypočítal za celkový čas: '+ total)
+    }
     document.getElementById('count').innerText = 'Spravne: ' + spravne + ', Spatne: ' + spatne;
     zbytek = 0;
     cislobez = 0;
