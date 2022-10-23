@@ -23,7 +23,19 @@
     border-radius: 8px;
     background-color: #a2d2ffcb;
     box-shadow: black 2px 2px 4px;
+    max-width: 50%;
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
     font-family: 'Roboto Condensed', sans-serif;
+}
+
+#svp {
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: fit-content;
+    background-color: #85c4ff;
 }
 
 button {
@@ -106,7 +118,7 @@ hr {
 }
 
 #info {
-    color: #fff2;
+    color: rgb(255, 255, 255);
     position: fixed;
     bottom: 4px;
     right: 4px;
