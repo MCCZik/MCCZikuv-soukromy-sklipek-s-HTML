@@ -10,6 +10,16 @@
 </head>
 <body onload="Init()">
     <h1>Mathematika</h1>
-    <div class="game"><p id="example"></p><br><input onchange="Check()" type="number" id="answer"></div>
+    <div class="game">
+        <span id="example"></span>
+        <br>
+        <span id="time">(10s)</span>
+        <br>
+        <input onchange="Check()" type="number" id="answer">
+        <br>
+        <span id="result">---</span>
+        <br>
+        <span id="count">Spravne: 0, Spatne: 0</span>
+    </div>
 </body>
 </html>
