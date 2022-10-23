@@ -75,3 +75,12 @@ hr {
     border: none;
     border-bottom: rgba(255, 255, 255, 0.659) 2px dashed;
 }
+
+#info {
+    color: #fff2;
+    position: fixed;
+    bottom: 4px;
+    right: 4px;
+    display: block;
+    font-size: 10px;
+  }
