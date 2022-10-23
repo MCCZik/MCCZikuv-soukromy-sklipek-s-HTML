@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AJAX :*</title>
+    <script src="script.js"></script>
+</head>
+<body onload="Init()">
+    Name : <input type="text" id="name"><br>
+    Password : <input type="password" id="pass">
+    <hr>
+    <canvas height="72" width="160" style="border:black 1px solid" id="canvas"></canvas> <button onclick="NewCaptcha()">New</button><br><br>
+    Captcha : <input type="text" id="captcha">
+    <hr>
+    <button onclick="Valid()">Continue</button>
+    <p id="secret"></p>
+</body>
+</html>
