@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Squares.io</title>
+    <script src="js.js"></script>
+</head>
+<body onkeydown="KD(event)" onkeyup="KU(event)" onload="Init()">
+    Difficulty: Very Easy<br>
+    <button onclick="start()">Start!</button>
+    <p id="par1">
+        Score : 0<br>Speed : 4
+    </p>
+    <svg xmlns="http://www.w3.org/2000/svg" width="400" height="400">
+        <rect x="10" y="10" width="20" height="20" fill="blue" id="rect1"/>
+        <rect x="100" y="100" width="20" height="20" fill="yellow" id="rect2"/>
+    </svg>
+</body>
+</html>

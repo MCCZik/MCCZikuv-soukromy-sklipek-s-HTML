@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Šicí firma</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="game.js"></script>
+</head>
+<body>
+        <b><p id="klobouky">0 Klobouků</p>
+        <p id="kzk">0 Klobouků za klik</p>
+        <p id="kps">0 Klobouků za vteřinu</p></b>
+        <button onclick="Button1()">
+            Nakoupit Klobouky
+        </button><br><br>
+        <h2><b><i><u>Vylepšení:</u></i></b><br></h2>
+        <button onclick="Button2()">
+            <p>Lepší pracovníci<br>2x více Klobouků za klik</p>
+            <p id="cena1">Cena : 20 Klobouků</p>
+        </button>
+        <button onclick="Koupit(0)">
+            <p>Nový šicí stroj<br>+2 klobouky/s</p>
+            <p id="kps0">Cena : 100 klobouků</p>
+        </button>
+        <button onclick="Koupit(1)">
+            <p>Nová továrna<br>+25 klobouků/s</p>
+            <p id="kps1">Cena : 10000 klobouků</p>
+        </button>
+        <button onclick="Koupit(2)">
+            <p>Nová firma<br>+1000 klobouků/s</p>
+            <p id="kps2">Cena : 500000 klobouků</p>
+        </button>
+</body>
+</html>
