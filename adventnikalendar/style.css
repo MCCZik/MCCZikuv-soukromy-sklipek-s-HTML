@@ -1,0 +1,94 @@
+html {
+  background-color: rgb(30, 53, 53);
+  color: rgb(255, 255, 255);
+  font-size: 5vh;
+  font-family: 'Ubuntu Condensed', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.screen {
+  position: fixed;
+  padding: 12px;
+  border-radius: 8px;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  background-color: #0003;
+  border: #fff3 solid 2px;
+}
+
+hr {
+  border: none;
+  margin: 8px;
+  border-bottom: #fff3 solid 2px;
+}
+
+canvas {
+  cursor: pointer;
+  height: calc(100vh - 40px);
+  max-width: calc(100vw - 40px);
+}
+
+button {
+  padding: 8px 12px;
+  color: white;
+  border-radius: 12px;
+  color: rgb(255, 255, 255);
+  font-size: 3vh;
+  font-family: 'Ubuntu Condensed', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(56, 89, 90);
+  border: #fff3 solid 2px;
+}
+
+select, input {
+  background-color: rgb(30, 53, 53);
+  color: rgb(255, 255, 255);
+  font-family: 'Ubuntu Condensed', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#login input {
+  font-size: 5vh;
+}
+
+#fname {
+  margin-bottom: 6px;
+}
+
+button:hover {
+  cursor: pointer;
+  filter: brightness(125%);
+}
+
+h1 {
+  font-size: 3vh;
+}
+
+img {
+  max-width: 80vw;
+  max-height: 50vh;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#ques h1, #ques p, #ques span, #ques input, #ques button {
+  font-size: 2vh;
+  margin: 2px;
+  padding: 2px;
+  text-align: left;
+}
+
+#ny {
+  color: rgb(255, 195, 127);
+}
+
+#yy {
+  color: rgb(127, 255, 159);
+}
+
+#info {
+  color: #fff2;
+  position: fixed;
+  bottom: 4px;
+  right: 4px;
+  display: block;
+  font-size: 10px;
+}
