@@ -4,7 +4,12 @@ html {
     font-size: 40px;
     background-color: lavender;
 }
-
+div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .game {
     text-align: center;
     border: black 2px solid;
