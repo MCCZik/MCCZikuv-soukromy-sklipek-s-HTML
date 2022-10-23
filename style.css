@@ -2,25 +2,32 @@
     margin: 6px;
     padding: 6px;
     border-radius: 8px;
-    background-color: #004299cf;
+    background-color: #a2d2ff;
     box-shadow: black 2px 2px 4px;
     max-width: 50%;
     box-sizing: border-box;
     float: left;
-    width: 50%; /* three boxes (use 25% for four, and 50% for two, etc) */
-    padding: 50px; /* if you want space between the images */
+    width: 50%;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .old {
     margin: 6px;
     padding: 6px;
     border-radius: 8px;
-    background-color: #00357bcf;
+    background-color: #a2d2ffcb;
     box-shadow: black 2px 2px 4px;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 button {
-    background-color: #004299;
+    background-color: #ffafcc;
     box-shadow: black 2px 2px 4px;
     color: white;
     border: none;
@@ -28,21 +35,24 @@ button {
     margin: 2px;
     padding: 2px 4px;
     font-size: 1em;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 button:hover {
-    background-color: #4448cc;
+    background-color: #ffc8dd;
     box-shadow: black 2px 2px 4px;
     border: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 2px;
     padding: 2px 4px;
     font-size: 1em;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 button:active {
-    background-color: #002f55;
+    background-color: #ffc8dd;
     box-shadow: none;
+    font-family: 'Roboto Condensed', sans-serif;
 
 }
 
@@ -50,18 +60,21 @@ h2 {
     text-align: left;
     margin: 2px;
     font-size: 2em;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 h2#cent {
     text-align: center;
     margin: 2px;
     font-size: 2em;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 h3 {
     text-align: center;
     margin: 2px;
     font-size: 1.2em;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 h1 {
@@ -69,16 +82,27 @@ h1 {
     margin: 2px;
     font-size: 4em;
 }
+#bold {
+    background-color: #cdb4db;
+}
+
+#bnew {
+    background-color: #ffc8dd;
+}
 
 html {
-    background-color: #00237a;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #bde0fe;
+    font-family: 'Dosis', sans-serif;
     color: white;
 }
 
 hr {
     border: none;
     border-bottom: rgba(255, 255, 255, 0.659) 2px dashed;
+}
+
+.dosis {
+    font-family: 'Dosis', sans-serif;
 }
 
 #info {

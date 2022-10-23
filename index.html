@@ -6,71 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rozcestí</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Roboto+Condensed&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>Rozcestí</h1>
     <h2 id="cent">Vítej v mém soukromém sklípku!</h2>
-    <h4 id="cent"><em>To co zde je, již zde brzo nemusí být...</em></h4>
+    <h3 id="cent"><em>To co zde je, již zde brzo nemusí být...</em></h3>
     <hr>
-    <div class="app">
-        <h2>Simulátor přátelství</h2>
-        <hr>
-        <p>Jedná se o jednoduchý simulátor, kde mohou vzniknout nejen vtipné zážitky!</p>
-        <hr>
-        <a href="simulator/index.html"><button>Kouknu se</button></a>
-    </div>
-    <div class="app">
-        <h2>Žákovská knížka</h2>
-        <hr>
-        <p>Jednoduchá miniaplikace, která slouží zejména pro studenty SŠ, která nevede systém Bakaláři.</p>
-        <hr>
-        <a href="zk/index.html"><button>Kouknu se</button></a>
-    </div>
-    <div class="app">
-        <h2>Všemi deseti</h2>
-        <hr>
-        <p>Nechcete platit předražené služby nějakých online stránek? Chcete se naučit psát rychle? Od toho tu máme aplikaci Všemi deseti!</p>
-        <hr>
-        <a href="vsemideseti/index.html"><button>Kouknu se</button></a>
+    <div class="flex-container">
+        <div class="app">
+            <h2>Adventní kalendář</h2>
+            <hr>
+            <p>Chceš si oetvírat okénka z kalendáře? Už jsi snědl všechnu čokoládu a nevíš co dál? Nevadí, od toho tu mám tenhlencten fajnovej!</p>
+            <hr>
+            <button id="bnew" disabled>Nové</button><a href="adventnikalendar/"><button>Kouknu se</button></a>
+        </div>
+        <div class="app">
+            <h2>Simulátor přátelství</h2>
+            <hr>
+            <p>Jedná se o jednoduchý simulátor, kde mohou vzniknout nejen vtipné zážitky!</p>
+            <hr>
+            <a href="simulator/index.html"><button>Kouknu se</button></a>
+        </div>
+        <div class="app">
+            <h2>Žákovská knížka</h2>
+            <hr>
+            <p>Jednoduchá miniaplikace, která slouží zejména pro studenty SŠ, která neeviduje známky do systému Bakaláři.</p>
+            <hr>
+            <a href="zk/index.html"><button>Kouknu se</button></a>
+        </div>
+        <div class="app">
+            <h2>Všemi deseti</h2>
+            <hr>
+            <p>Nechcete platit předražené služby nějakých online stránek? Chcete se naučit psát rychle? Od toho tu máme aplikaci Všemi deseti!</p>
+            <hr>
+            <a href="vsemideseti/index.html"><button>Kouknu se</button></a>
+        </div>
     </div>
     <div class="old">
         <h2>Malování</h2>
         <hr>
         <p>Nemáte v oblibě klasické Malování od Windows? Toto vám ho nahradí!</p>
         <hr>
-        <button disabled>Zastaralé</button><a href="malování/index.html"><button>Kouknu se</button></a>
+        <button id="bold" disabled>Zastaralé</button><a href="malování/index.html"><button>Kouknu se</button></a>
     </div>
     <div class="old">
         <h2>Veverka OS</h2>
         <hr>
         <p>Chcete si připadat cool? Používejte Veverka OS, nejlepší operační systém svých dob!</p>
         <hr>
-        <button disabled>Zastaralé</button><a href="Veverka OS/index.html"><button>Kouknu se</button></a>
+        <button id="bold" disabled>Zastaralé</button><a href="Veverka OS/index.html"><button>Kouknu se</button></a>
     </div>
     <div class="old">
         <h2>Angela</h2>
         <hr>
         <p>Vylepšená verze Siri.</p>
         <hr>
-        <button disabled>Zastaralé</button><a href="angela/index.html"><button>Kouknu se</button></a>
+        <button id="bold" disabled>Zastaralé</button><a href="angela/index.html"><button>Kouknu se</button></a>
     </div>
     <div class="old">
         <h2>Kolo štestí</h2>
         <hr>
         <p>Ruská ruleta, která má šmrnc!</p>
         <hr>
-        <button disabled>Zastaralé</button><a href="spinninground/index.html"><button>Kouknu se</button></a>
+        <button id="bold" disabled>Zastaralé</button><a href="spinninground/index.html"><button>Kouknu se</button></a>
     </div>
     <div class="old">
         <h2>RPG</h2>
         <hr>
         <p>Již velmi stará hra.</p>
         <hr>
-        <button disabled>Zastaralé</button><a href="vptales/indext.html"><button>Kouknu se</button></a>
+        <button id="bold" disabled>Zastaralé</button><a href="vptales/indext.html"><button>Kouknu se</button></a>
     </div>
     <hr>
     <br>
-    <h2 id="cent">Počkej, to jsi musel scrollovat až sem?</h2>
+    <h2 class="dosis" id="cent">Počkej, to jsi musel scrollovat až sem?</h2>
     <h3>Určitě zde něco najdeš, a pokud ne teď, tak později.</h3>
     <span id="info">Made by MCCZ!</span>
 </body>
