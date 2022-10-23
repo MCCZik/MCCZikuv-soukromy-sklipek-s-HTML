@@ -1,0 +1,18 @@
+html {
+    background-color: aqua;
+    color: white;
+    font-family: 'Comic Sans MS';
+    size: 2cm;
+}
+h4 {
+    size: 0,005cm;
+    color: rgb(124, 255, 255);
+    font-family: 'Lucida Sans Unicode', Arial;
+}
+h1 {
+    color: blue;
+    cursor: pointer;
+}
+h2 {
+    color: burlywood;
+}

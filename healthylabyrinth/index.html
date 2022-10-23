@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hra</title>
+</head>
+<body onload="Init()" onkeydown="Press(event)">
+    <select onchange="Init()" id="level">
+        <option value="0">Prázdné</option>
+        <option value="200">Random </option>
+        <option value="edit">Editor</option>
+    </select>
+    <canvas id="game" width="1840" height="480" style="border: 5px black solid">
+
+    </canvas>
+    <hr>
+    P1 : <progress id="p1" max="500" value="500"></progress> <p id="pr1"></p><br>
+    P2 : <progress id="p2" max="500" value="500"></progress><p id="pr2"></p><br>
+    <div class="chat">
+        <h3>Chat:</h3>
+        <p id="zprava"</p>
+        <button onclick="Init()">RESET</button> <button onclick="fightstart()">ZAHRÁT TUTO MAPU</button>
+    </div>
+</body>
+</html>

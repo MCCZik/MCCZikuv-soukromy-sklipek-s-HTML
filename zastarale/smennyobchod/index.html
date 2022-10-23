@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <script src="js.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Překupník s.r.o</title>
+    </head>
+    <body>
+        <div class="wood">
+            <b>Základní suroviny:</b><br>
+            <hr><hr>
+            <p id="amountwood"><b><u>Dřevo (x0)</u></b></u></b></p>
+            Vyžaduje:<br>
+            Nic
+            <button onclick="bwood()">
+                Koupit
+            </button><hr>
+        </div>
+        <div class="stone">
+            <p id="amountstone"><b><u>Kámen (x0)</u></b></p>
+            Vyžaduje:<br>
+            Dřevo (x2)
+            <button onclick="bstone()">
+                Koupit
+            </button><hr>
+        </div>
+            
+        <div class="iron">
+            <p id="amountiron"><b><u>Železo (x0)</u></b></p>
+            Vyžaduje:<br>
+            Dřevo (x2)<br>
+            Kámen (x3)
+            <button onclick="biron()">
+                Koupit
+            </button><hr>
+        </div>
+            
+        <div class="coal">
+            <p id="amountcoal"><b><u>Uhlí (x0)</u></b></p>
+            Vyžaduje:<br>
+            Železo (x2)<br>
+            Dřevo (x2)
+            <button onclick="bcoal()">
+                Koupit
+            </button><hr>
+        </div>
+            
+        <div class="torch">
+            <p id="amounttorch"><b><u>Pochodeň (x0)</u></b></p>
+            Vyžaduje:<br>
+            Uhlí (x1)<br>
+            Dřevo (x1)
+            <button onclick="btorch()">
+                Koupit
+            </button>
+        </div>
+        <hr><hr>
+        <b>Dole, v podzemí:</b>
+        <hr>
+        <div class="cave">
+            <p id="amountcave"><b><u>Důl (x0)</u></b></p>
+            Vyžaduje:<br>
+            Pochodeň (x10)<br>
+            Dřevo (x25)<br>
+            Železo (x5)<br>
+            Kámen (x100)
+            <button onclick="bcave()">
+                Koupit
+            </button><hr>
+        </div>
+            
+        <div class="gold">
+            <p id="amountgold"><b><u>Zlato (x0)</u></b></p>
+            Vyžaduje:<br>
+            Železo (x2)<br>
+            Dřevo (x2)
+            <button onclick="bgold()">
+                Koupit
+            </button><hr>
+        </div>
+            
+        <div class="saphir">
+            <p id="amountsaphir"><b><u>Safír (x0)</u></b></p>
+            Vyžaduje:<br>
+            Železo (x10)
+            <button onclick="bsaphir()">
+                Koupit
+            </button><hr>
+        </div>
+            
+        <div class="ruby">
+            <p id="amountruby"><b><u>Rubín (x0)</u></b></p>
+            Vyžaduje:<br>
+            Železo (x2)<br>
+            Safír (x2)
+            <button onclick="bruby()">
+                Koupit
+            </button><hr>
+        </div>
+            
+        <div class="obsidian">
+            <p id="amountobsidian"><b><u>Obsidián (x0)</u></b></p>
+            <p>Vyžaduje:<br>
+            Rubín (x4)<br>
+            Safír (x10)
+            <button onclick="bobsidian()">
+                Koupit
+            </button><hr>
+        </div>
+            
+        <div class="emerald">
+            <p id="amountemerald"><b><u>Smaragd (x0)</u></b></p>
+            Vyžaduje:<br>
+            Obsidián (x15)<br>
+            Zlato (x10)<br>
+            Diamant (x3) 
+            <button onclick="bemerald()">
+                Koupit
+            </button><hr>
+        </div>
+            
+        <div class="diamond">
+            <p id="amountdiamond"><b><u>Diamant (x0)</u></b></p>
+            Vyžaduje:<br>
+            Obsidián (x10)<br>
+            Zlato (x5)<br>
+            Safír (x15)
+            <button onclick="bdiamond()">
+                Koupit
+            </button><hr>
+        </div>
+    </body>
+</html>
