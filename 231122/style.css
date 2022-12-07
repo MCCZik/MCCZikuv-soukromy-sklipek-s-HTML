@@ -1,0 +1,43 @@
+
+html {
+    font-family: 'Source Code Pro', Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: black;
+}
+
+#navbar {
+    text-align: center;
+    background-color: black;
+    color: green;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+}
+
+footer {
+    text-align: center;
+    background-color: green;
+}
+
+.item {
+    margin: 20px;
+    font-size: 1.5em;
+}
+
+.item:hover {
+    border: 2px;
+    border-bottom: 3px solid green;
+}
+
+#login {
+    border: 3px solid green;
+}
+
+#login:hover {
+    color: white;
+    background-color: green;
+}
+
+article header {
+    height: 200px;
+}
