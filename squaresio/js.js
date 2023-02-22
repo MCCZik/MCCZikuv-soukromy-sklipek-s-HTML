@@ -8,7 +8,7 @@ var Down = false;
 var FPS = 60;
 var Speed = 4;
 var Score = 0;
-var Difficulty = 0.00001;
+var Difficulty = 1;
 var Odměna = 1;
 var Interval;
 var JidloX;
