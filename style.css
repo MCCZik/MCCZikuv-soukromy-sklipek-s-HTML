@@ -2,8 +2,8 @@
     margin: 6px;
     padding: 6px;
     border-radius: 8px;
-    background-color: #a2d2ff;
-    box-shadow: black 2px 2px 4px;
+    background-color: #00303d;
+    box-shadow: #002029 2px 2px 4px;
     max-width: 50%;
     box-sizing: border-box;
     float: left;
@@ -21,8 +21,8 @@
     margin: 6px;
     padding: 6px;
     border-radius: 8px;
-    background-color: #a2d2ffcb;
-    box-shadow: black 2px 2px 4px;
+    background-color: #004052;
+    box-shadow: #002029 2px 2px 4px;
     max-width: 50%;
     box-sizing: border-box;
     float: left;
@@ -35,11 +35,11 @@
     width: 100%;
     box-sizing: border-box;
     max-width: fit-content;
-    background-color: #85c4ff;
+    background-color: #004052;
 }
 
 button {
-    background-color: #ffafcc;
+    background-color: #005066;
     box-shadow: black 2px 2px 4px;
     color: white;
     border: none;
@@ -51,7 +51,7 @@ button {
 }
 
 button:hover {
-    background-color: #ffc8dd;
+    background-color: #00607a;
     box-shadow: black 2px 2px 4px;
     border: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -62,7 +62,7 @@ button:hover {
 }
 
 button:active {
-    background-color: #ffc8dd;
+    background-color: #00607a;
     box-shadow: none;
     font-family: 'Roboto Condensed', sans-serif;
 
@@ -95,15 +95,15 @@ h1 {
     font-size: 4em;
 }
 #bold {
-    background-color: #cdb4db;
+    background-color: #005066;
 }
 
 #bnew {
-    background-color: #ffc8dd;
+    background-color: #005066;
 }
 
 html {
-    background-color: #bde0fe;
+    background-color: #002029;
     font-family: 'Dosis', sans-serif;
     color: white;
 }
